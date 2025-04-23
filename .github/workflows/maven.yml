@@ -30,6 +30,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+#use snky to perform SAST
   snyk:
       runs-on: ubuntu-latest
       needs: build
